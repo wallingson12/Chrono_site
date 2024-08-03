@@ -1,54 +1,54 @@
 /* Reseta as margens e alturas padrão */
 html, body {
     height: 100%;
-    width: 100%;
+    padding: 0;
     margin: 0;
+    overflow-x: hidden; /* Impede o scroll horizontal, escondendo qualquer overflow */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
-    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
 }
 
 header {
     background-color: #333;
-    background-image: url('imagens/fundo_top.png'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Faz com que a imagem cubra todo o cabeçalho */
-    background-position: center; /* Centraliza a imagem no cabeçalho */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-image: url('imagens/fundo_top.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
-    padding: 5px 10px; /* Reduz o padding do header */
+    padding: 10px 20px;
     text-align: center;
-    width: 100%; /* Garante que o header ocupe toda a largura */
+    margin: 0;
 }
 
 nav {
-    display: flex; /* Usa Flexbox para o nav */
-    justify-content: center; /* Centraliza o conteúdo do nav */
-    margin: 0; /* Remove a margem abaixo do nav para reduzir a distância */
-    padding: 10px 0; /* Reduz o padding do nav */
-    width: 100%; /* Garante que o nav ocupe toda a largura */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 20px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove a margem padrão do ul */
-    display: flex; /* Usa Flexbox para os itens da lista */
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 5px; /* Ajusta a margem entre os itens do menu */
+    margin: 0 5px;
 }
 
 nav a {
     color: white;
     background-color: black;
     text-decoration: none;
-    padding: 10px 20px; /* Reduz o padding dos links de navegação */
-    font-size: 16px; /* Reduz o tamanho da fonte dos links */
+    padding: 15px 30px;
+    font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -58,70 +58,52 @@ nav a:hover {
 }
 
 main {
-    background: #FFFFFF; /* Ajusta o fundo do main para branco puro */
-    padding: 1rem; /* Reduz o padding do main */
-    width: 100%;
-    text-align: center; /* Centraliza o texto dentro do main */
+    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F);
+    padding: 2rem;
+    text-align: center;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    box-sizing: border-box; /* Garante que o padding não afete a largura total */
 }
 
 .section {
-    background: #FFFFFF; /* Ajusta o fundo da section para branco puro */
-    padding: 0.5rem; /* Reduz o padding da section */
+    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F);
+    padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ajusta a sombra da section */
-    margin-bottom: 1rem; /* Reduz a margem inferior */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
     display: flex;
-    gap: 10px; /* Adiciona espaço entre as imagens */
-    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
-    justify-content: center; /* Centraliza as imagens no contêiner */
-    width: 100%; /* Garante que a section ocupe toda a largura */
-    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1; /* Preenche o espaço restante */
 }
 
 .section h2 {
-    width: 100%; /* Faz o título ocupar toda a largura disponível */
+    width: 100%;
     margin-top: 0;
 }
 
 .character-img {
-    width: auto; /* Ajusta a largura automaticamente */
-    height: auto; /* Ajusta a altura automaticamente */
-    max-width: 100%; /* Limita a largura máxima para 100% do contêiner */
-    max-height: 100%; /* Limita a altura máxima para 100% do contêiner */
-    object-fit: contain; /* Garante que a imagem seja exibida inteira */
-    margin: 5px; /* Reduz a margem entre as imagens */
-    border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
-    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ajusta a sombra da imagem */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+img.img-personagem {
+    background-color: white;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
 }
 
 footer {
     background-color: #333;
     color: #fff;
+    width: 100%;
     text-align: center;
-    padding: 5px 0; /* Reduz o padding do footer */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 5px 10px; /* Ajuste o padding para telas menores */
-    }
-
-    nav a {
-        padding: 8px 16px; /* Reduz o padding dos links de navegação */
-        font-size: 14px; /* Reduz o tamanho da fonte dos links */
-    }
-
-    .section {
-        padding: 0.5rem; /* Ajuste o padding da seção */
-    }
-
-    .character-img {
-        margin: 5px; /* Reduz a margem entre as imagens */
-    }
+    padding: 10px 0;
 }
