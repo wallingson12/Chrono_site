@@ -6,6 +6,7 @@ html, body {
 }
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive; /* Adiciona uma fonte padrão */
@@ -58,6 +59,7 @@ nav a:hover {
 main {
     background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F); /* Aplicando o degradê */
     padding: 2rem;
+    width: 100%;
     text-align: center; /* Centraliza o texto dentro do main */
     flex: 1;
     display: flex;
