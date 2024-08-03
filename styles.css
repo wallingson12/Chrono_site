@@ -19,7 +19,7 @@ header {
     background-position: center; /* Centraliza a imagem no cabeçalho */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     color: #fff;
-    padding: 10px 20px; /* Ajuste o padding para reduzir a altura do header */
+    padding: 5px 10px; /* Reduz o padding do header */
     text-align: center;
     width: 100%; /* Garante que o header ocupe toda a largura */
 }
@@ -28,7 +28,7 @@ nav {
     display: flex; /* Usa Flexbox para o nav */
     justify-content: center; /* Centraliza o conteúdo do nav */
     margin: 0; /* Remove a margem abaixo do nav para reduzir a distância */
-    padding: 20px 0; /* Ajuste o padding conforme necessário */
+    padding: 10px 0; /* Reduz o padding do nav */
     width: 100%; /* Garante que o nav ocupe toda a largura */
 }
 
@@ -47,8 +47,8 @@ nav a {
     color: white;
     background-color: black;
     text-decoration: none;
-    padding: 15px 30px; /* Aumenta o padding dos links de navegação */
-    font-size: 18px; /* Aumenta o tamanho da fonte dos links */
+    padding: 10px 20px; /* Reduz o padding dos links de navegação */
+    font-size: 16px; /* Reduz o tamanho da fonte dos links */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -58,8 +58,8 @@ nav a:hover {
 }
 
 main {
-    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F); /* Aplicando o degradê */
-    padding: 2rem;
+    background: #FFFFFF; /* Ajusta o fundo do main para branco puro */
+    padding: 1rem; /* Reduz o padding do main */
     width: 100%;
     text-align: center; /* Centraliza o texto dentro do main */
     flex: 1;
@@ -70,11 +70,11 @@ main {
 }
 
 .section {
-    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F); /* Aplicando o degradê */
-    padding: 1rem;
+    background: #FFFFFF; /* Ajusta o fundo da section para branco puro */
+    padding: 0.5rem; /* Reduz o padding da section */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ajusta a sombra da section */
+    margin-bottom: 1rem; /* Reduz a margem inferior */
     display: flex;
     gap: 10px; /* Adiciona espaço entre as imagens */
     flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
@@ -94,16 +94,16 @@ main {
     max-width: 100%; /* Limita a largura máxima para 100% do contêiner */
     max-height: 100%; /* Limita a altura máxima para 100% do contêiner */
     object-fit: contain; /* Garante que a imagem seja exibida inteira */
-    margin: 10px; /* Adiciona margem entre as imagens */
+    margin: 5px; /* Reduz a margem entre as imagens */
     border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra para efeito */
+    box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ajusta a sombra da imagem */
 }
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0; /* Ajusta o padding do footer */
+    padding: 5px 0; /* Reduz o padding do footer */
     width: 100%; /* Garante que o footer ocupe toda a largura */
 }
 
@@ -113,8 +113,8 @@ footer {
     }
 
     nav a {
-        padding: 10px 20px; /* Reduz o padding dos links de navegação */
-        font-size: 16px; /* Reduz o tamanho da fonte dos links */
+        padding: 8px 16px; /* Reduz o padding dos links de navegação */
+        font-size: 14px; /* Reduz o tamanho da fonte dos links */
     }
 
     .section {
