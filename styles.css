@@ -6,7 +6,6 @@ html, body {
 }
 
 body {
-    width: 100%;
     display: flex;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
@@ -22,7 +21,6 @@ header {
     color: #fff;
     padding: 10px 20px; /* Ajuste o padding para reduzir a altura do header */
     text-align: center;
-    margin: 0;
     width: 100%; /* Garante que o header ocupe toda a largura */
 }
 
@@ -107,4 +105,23 @@ footer {
     text-align: center;
     padding: 10px 0; /* Ajusta o padding do footer */
     width: 100%; /* Garante que o footer ocupe toda a largura */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 5px 10px; /* Ajuste o padding para telas menores */
+    }
+
+    nav a {
+        padding: 10px 20px; /* Reduz o padding dos links de navegação */
+        font-size: 16px; /* Reduz o tamanho da fonte dos links */
+    }
+
+    .section {
+        padding: 0.5rem; /* Ajuste o padding da seção */
+    }
+
+    .character-img {
+        margin: 5px; /* Reduz a margem entre as imagens */
+    }
 }
