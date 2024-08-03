@@ -1,82 +1,108 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personagem 1 - Fan-site de Jogo</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <img src="imagens/logo.jpg" alt="Logo do Chrono Trigger">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Reseta as margens e alturas padrão */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 
-    <main>
-        <section id="personagem" class="section">
-            <h2>Personagens jogáveis</h2>
-            <a href="personagens/Crono.html">
-                <img src="imagens/Crono_logo.webp" alt="Chrono" class="character-img">
-            </a>
-            <a href="personagens/Marle.html">
-                <img src="imagens/Marle_logo.webp" alt="Marle" class="character-img">
-            </a>
-            <a href="personagens/Flog.html">
-                <img src="imagens/Flog_logo.webp" alt="Flog" class="character-img">
-            </a>
-            <a href="personagens/Lucca.html">
-                <img src="imagens/Lucca_logo.webp" alt="Lucca" class="character-img">
-            </a>
-            <a href="personagens/Magus.html">
-                <img src="imagens/Magus_logo.webp" alt="Magus" class="character-img">
-            </a>
-            <a href="personagens/Robo.html">
-                <img src="imagens/Robô_logo.webp" alt="Robô" class="character-img">
-            </a>
-            <a href="personagens/Ayla.html">
-                <img src="imagens/Ayla_logo.webp" alt="Ayla" class="character-img">
-            </a>
+body {
+    display: flex;
+    width: 100vh;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive; /* Adiciona uma fonte padrão */
+}
 
-            <h2>NPC´s</h2>
+header {
+    width: 100vh; /* Ajusta a largura para 100% da largura da viewport */
+    background-color: #333;
+    background-image: url('imagens/fundo_top.png'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o cabeçalho */
+    background-position: center; /* Centraliza a imagem no cabeçalho */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    color: #fff;
+    padding: 10px 20px; /* Ajuste o padding do cabeçalho */
+    text-align: center;
+    margin: 0;
+    height: 100vh; /* Faz o cabeçalho ocupar toda a altura da tela */
+    box-sizing: border-box; /* Inclui o padding na altura total */
+    position: relative; /* Necessário para assegurar que a imagem de fundo seja posicionada corretamente */
+}
 
-            </a>
-            <a href="personagens/Magus.html">
-                <img src="imagens/Cyrus.jpg" alt="Cyrus" class="character-img">
-            </a>
-            <a href="personagens/Azala.html">
-                <img src="imagens/Azala.webp" alt="Azala" class="character-img">
-            </a>
-            <a href="personagens/Dalton.html">
-                <img src="imagens/Dalton.webp" alt="Dalton" class="character-img">
-            </a>
-            <a href="personagens/Ozzie_Flea_Slash.html">
-                <img src="imagens/Ozzie.webp" alt="Ozzie" class="character-img">
-            </a>
-            <a href="personagens/Ozzie_Flea_Slash.html">
-                <img src="imagens/Slash.jpg" alt="Slash" class="character-img">
-            </a>
-            <a href="personagens/Ozzie_Flea_Slash.html">
-                <img src="imagens/Flea.jpg" alt="Flea" class="character-img">
-            </a>
-            <a href="personagens/Masamune.html">
-                <img src="imagens/Masa_Mune.jpg" alt="Masamune" class="character-img">
-            </a>
-            <a href="personagens/Rainha_leene.html">
-                <img src="imagens/Rainha Leene.webp" alt="Rainha Leene" class="character-img">
-            </a>
-            <a href="personagens/Rei_guardia.html">
-                <img src="imagens/Rei guardia.webp" alt="Rei guardia" class="character-img">
-            </a>            
-        </section>
-    </main>
+nav {
+    display: flex; /* Usa Flexbox para o nav */
+    justify-content: center; /* Centraliza o conteúdo do nav */
+    margin: 0; /* Remove a margem abaixo do nav para reduzir a distância */
+    padding: 20px 0; /* Ajuste o padding conforme necessário */
+}
 
-    <footer>
-        <p>&copy; 2024 Fan-site de Jogo. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove a margem padrão do ul */
+    display: flex; /* Usa Flexbox para os itens da lista */
+}
+
+nav ul li {
+    margin: 0 5px; /* Ajusta a margem entre os itens do menu */
+}
+
+nav a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 15px 30px; /* Aumenta o padding dos links de navegação */
+    font-size: 18px; /* Aumenta o tamanho da fonte dos links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F); /* Aplicando o degradê */
+    padding: 2rem;
+    text-align: center; /* Centraliza o texto dentro do main */
+    flex: 1; /* Faz com que o main ocupe o restante do espaço */
+}
+
+.section {
+    background: linear-gradient(to bottom, #FFFFFF, #D3D3D3, #A9A9A9, #696969, #2F4F4F); /* Aplicando o degradê */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 10px; /* Adiciona espaço entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
+    justify-content: center; /* Centraliza as imagens no contêiner */
+}
+
+.section h2 {
+    width: 100%; /* Faz o título ocupar toda a largura disponível */
+    margin-top: 0;
+}
+
+.character-img {
+    width: 200px; /* Define a largura das imagens */
+    height: 200px; /* Define a altura das imagens */
+    object-fit: cover; /* Faz com que a imagem cubra a área sem distorcer */
+    margin: 10px; /* Adiciona margem entre as imagens */
+    border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra para efeito */
+}
+
+img.img-personagem {
+    background-color: white;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Ajusta o padding do footer */
+}
