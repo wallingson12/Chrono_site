@@ -9,8 +9,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: 'Press Start 2P', cursive; /* Adiciona uma fonte padrão */
-    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    font-family: 'Press Start 2P', cursive;
+    min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
 }
 
 header {
@@ -68,7 +68,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
-    flex-grow: 1; /* Garante que o main cresça para ocupar o espaço restante */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
 }
 
 .section {
@@ -82,6 +82,7 @@ main {
     flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
     justify-content: center; /* Centraliza as imagens no contêiner */
     width: 100%; /* Garante que a section ocupe toda a largura */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
 }
 
 .section h2 {
