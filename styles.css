@@ -23,6 +23,7 @@ header {
     padding: 10px 20px; /* Ajuste o padding para reduzir a altura do header */
     text-align: center;
     margin: 0;
+    width: 100%; /* Garante que o header ocupe toda a largura */
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
     justify-content: center; /* Centraliza o conteúdo do nav */
     margin: 0; /* Remove a margem abaixo do nav para reduzir a distância */
     padding: 20px 0; /* Ajuste o padding conforme necessário */
+    width: 100%; /* Garante que o nav ocupe toda a largura */
 }
 
 nav ul {
@@ -79,6 +81,7 @@ main {
     gap: 10px; /* Adiciona espaço entre as imagens */
     flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte */
     justify-content: center; /* Centraliza as imagens no contêiner */
+    width: 100%; /* Garante que a section ocupe toda a largura */
 }
 
 .section h2 {
@@ -102,4 +105,5 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0; /* Ajusta o padding do footer */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
 }
