@@ -79,8 +79,8 @@ main {
 }
 
 .character-img {
-    width: 200px; /* Define a largura das imagens */
-    height: 200px; /* Define a altura das imagens */
+    width: 300px; /* Define a largura das imagens */
+    height: 300px; /* Define a altura das imagens */
     object-fit: cover; /* Faz com que a imagem cubra a área sem distorcer */
     margin: 10px; /* Adiciona margem entre as imagens */
     border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
@@ -89,7 +89,7 @@ main {
 
 img.img-personagem {
             background-color: white;
-            width: 150px;
+            width: 250px;
             display: block;
             margin: 0 auto;
         }
