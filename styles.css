@@ -79,20 +79,15 @@ main {
 }
 
 .character-img {
-    width: 300px; /* Define a largura das imagens */
-    height: 300px; /* Define a altura das imagens */
-    object-fit: cover; /* Faz com que a imagem cubra a área sem distorcer */
+    width: auto; /* Ajusta a largura automaticamente */
+    height: auto; /* Ajusta a altura automaticamente */
+    max-width: 100%; /* Limita a largura máxima para 100% do contêiner */
+    max-height: 100%; /* Limita a altura máxima para 100% do contêiner */
+    object-fit: contain; /* Garante que a imagem seja exibida inteira */
     margin: 10px; /* Adiciona margem entre as imagens */
     border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adiciona uma sombra para efeito */
 }
-
-img.img-personagem {
-            background-color: white;
-            width: 250px;
-            display: block;
-            margin: 0 auto;
-        }
 
 footer {
     background-color: #333;
